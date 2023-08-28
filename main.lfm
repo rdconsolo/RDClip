@@ -1,0 +1,8 @@
+object frmMain: TfrmMain
+  Left = 395
+  Height = 478
+  Top = 127
+  Width = 411
+  Caption = 'RDClip'
+  LCLVersion = '2.2.6.0'
+end
