@@ -17,7 +17,6 @@ uses
 
 begin
   RequireDerivedFormResource:=True;
-  Application.Title:='RDClip';
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);

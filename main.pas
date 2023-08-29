@@ -5,10 +5,17 @@ unit main;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons;
 
 type
+
+  { TfrmMain }
+
   TfrmMain = class(TForm)
+    BitBtn1: TBitBtn;
+    Button1: TButton;
+    Edit1: TEdit;
+    ListBox1: TListBox;
   private
 
   public
