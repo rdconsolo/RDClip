@@ -12,19 +12,27 @@ object frmMain: TfrmMain
   Font.Name = 'Segoe UI'
   Font.Pitch = fpVariable
   Font.Quality = fqDraft
-  LCLVersion = '2.2.6.0'
-  object Edit1: TEdit
+  KeyPreview = True
+  OnKeyDown = FormKeyDown
+  object edtProcura: TEdit
     Left = 16
     Height = 25
+    Hint = 'Procurar (Ctrl+P)'
     Top = 16
     Width = 368
     Anchors = [akTop, akLeft, akRight]
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
     TabOrder = 0
-    Text = 'Edit1'
+    TextHint = 'Procurar...'
   end
   object ListBox1: TListBox
     Left = 16
-    Height = 352
+    Height = 344
     Top = 56
     Width = 368
     Anchors = [akTop, akLeft, akRight, akBottom]
@@ -33,8 +41,8 @@ object frmMain: TfrmMain
   end
   object Button1: TButton
     Left = 304
-    Height = 25
-    Top = 424
+    Height = 33
+    Top = 416
     Width = 80
     Anchors = [akRight, akBottom]
     Caption = '&Ok'
@@ -42,8 +50,8 @@ object frmMain: TfrmMain
   end
   object BitBtn1: TBitBtn
     Left = 16
-    Height = 25
-    Top = 424
+    Height = 33
+    Top = 416
     Width = 80
     Anchors = [akLeft, akBottom]
     Caption = '&Config'

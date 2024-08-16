@@ -14,8 +14,9 @@ type
   TfrmMain = class(TForm)
     BitBtn1: TBitBtn;
     Button1: TButton;
-    Edit1: TEdit;
+    edtProcura: TEdit;
     ListBox1: TListBox;
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
 
   public
@@ -28,6 +29,15 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TfrmMain }
+
+procedure TfrmMain.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  if (Shift = [ssCtrl]) and (Key = Ord('P')) then
+    edtProcura.SetFocus;
+end;
 
 end.
 
